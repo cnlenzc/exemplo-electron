@@ -1,0 +1,23 @@
+{
+  "name": "exemplo-electron",
+  "version": "1.0.0",
+  "description": "Exemplo de aplicação desktop electron (nodejs e chromium)",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cnlenzc/exemplo-electron.git"
+  },
+  "author": "Carlos Lenz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cnlenzc/exemplo-electron/issues"
+  },
+  "homepage": "https://github.com/cnlenzc/exemplo-electron#readme",
+  "devDependencies": {
+    "electron": "^1.8.4"
+  }
+}
