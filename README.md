@@ -1,2 +1,2 @@
 # exemplo-electron
-Exemplo de aplicação desctop electron (nodejs e chromium)
+Exemplo de aplicação desktop electron (nodejs e chromium)

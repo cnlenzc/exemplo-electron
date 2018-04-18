@@ -7,14 +7,13 @@ O desenvolvimento é semelhante ao de uma aplicação web com utilização de ht
 Este documento apresenta os passos necessários para a criação de um app básico.
 
 ## Iniciar o projeto em node
-
-Este comando cria o arquivo packge.json com as configurações do projeto em nodejs.
-
 ```
-$ md app-electron
-$ cd app-electron
+$ md exemplo-electron
+$ cd exemplo-electron
 $ npm init
 ```
+O npm cria o arquivo packge.json com as configurações do projeto em nodejs.
+
 
 Pode-se aceitar todas as perguntas iniciais como default. (depois pode trocar)
 ```
@@ -32,7 +31,6 @@ license: (ISC) MIT
 ## Instalar dependencias
 
 Instalando a dependencia do electron no nodejs
-
 ```
 $ npm install electron --save-dev
 ```
@@ -62,8 +60,15 @@ app.on('window-all-closed', () => {
 });
 ```
 
+## Criar html, css e js
+Arquivos: app/index.html, app/css/index.css, app/js/renderer.js
+
+Um exemplo de conteúdo destes arquivos esta neste repositório.
+
+
 ## Configurar start do app
 Arquivo: packate.json
+
 Incluir script start
 ```
   "scripts": {

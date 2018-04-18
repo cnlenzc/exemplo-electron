@@ -4,7 +4,8 @@
   "description": "Exemplo de aplicação desktop electron (nodejs e chromium)",
   "main": "main.js",
   "scripts": {
-    "start": "electron .",
+    "start": "cross-env NODE_ENV=development electron .",
+    "build": "cross-env NODE_ENV=production electron-builder",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,6 +19,25 @@
   },
   "homepage": "https://github.com/cnlenzc/exemplo-electron#readme",
   "devDependencies": {
-    "electron": "^1.8.4"
+    "cross-env": "^5.1.4",
+    "electron": "^1.8.4",
+    "electron-builder": "^20.9.0"
+  },
+  "build": {
+    "appId": "br.com.quickgenial.teste_electron",
+    "productName": "Appelectron",
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "icon": "icon.png",
+      "target": "nsis"
+    },
+    "nsis": {
+      "perMachine": true, 
+      "allowElevation": false,
+      "oneClick": false, 
+      "allowToChangeInstallationDirectory": true 
+    }
   }
 }
